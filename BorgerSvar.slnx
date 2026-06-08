@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="BorgerSvar.API/BorgerSvar.API.csproj" />
+  <Project Path="BorgerSvar.Application/BorgerSvar.Application.csproj" />
+  <Project Path="BorgerSvar.Domain/BorgerSvar.Domain.csproj" />
+  <Project Path="BorgerSvar.Infrastructure/BorgerSvar.Infrastructure.csproj" />
+</Solution>
