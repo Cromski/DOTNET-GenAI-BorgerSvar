@@ -27,4 +27,17 @@ public class CitizenQuery
 
         return new CitizenQuery(citizenIdCard, question);
     }
+
+    public void AssignAIAnswer(string answer)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(answer);
+
+        if (Status == QueryStatus.Besvaret)
+        {
+            throw new InvalidOperationException("Denne henvendelse er allerede besvaret.");
+        }
+
+        Answer = answer;
+        Status = QueryStatus.Besvaret;
+    }
 }
