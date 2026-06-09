@@ -10,7 +10,12 @@ public class CitizenQuery
     public string? Answer { get; private set; }
     public QueryStatus Status { get; private set; }
 
-    [SetsRequiredMembers]
+    protected CitizenQuery() 
+    { 
+        CitizenIdCard = null!;
+        Question = null!;
+    }
+
     private CitizenQuery(CitizenIdCard citizenIdCard, string question)
     {
         Id = Guid.NewGuid();
